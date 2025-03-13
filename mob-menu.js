@@ -3,9 +3,6 @@ function menu() {
   const menuBtn = document.querySelector('.mob-menu');
 
   menuBtn.addEventListener('click', () => {
-    console.log('click');
-    console.log('this', menuList);
-
     if (menuList.style.display === 'flex') {
       closeMenu();
     } else {

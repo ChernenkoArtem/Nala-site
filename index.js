@@ -350,18 +350,13 @@ function onscrollRocket() {
     // downscroll code
     if (top < 0 && top > -roadMapY) {
       rocket.style.transform = 'rotate(180deg)';
-      console.log('downscroll', top, rocket.style.top);
-
       rocket.style.top = 50 + +top.toFixed(0) * -1 + 'px';
-      // +String(rocket.style.top).replace(/\D/g, '') + 10 + 'px';
     }
   } else if (st < lastScrollTop) {
     // upscroll code
     if (top < 0 && top > -roadMapY) {
       rocket.style.transform = 'rotate(360deg)';
-      console.log('upscroll', top, rocket.style.top);
       rocket.style.top = 50 + +top.toFixed(0) * -1 + 'px';
-      // +String(rocket.style.top).replace(/\D/g, '') - 10 + 'px';
     }
   }
   lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
