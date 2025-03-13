@@ -145,6 +145,24 @@ header nav ul li a:hover::after {
   }
 }
 
+@media (max-width: 375px) {
+  nav .mob-menu img {
+    height: 45px;
+    width: 45px;
+  }
+
+  header .logo {
+    height: 45px;
+    width: 45px;
+  }
+
+  nav .mob-menu {
+    height: 100%;
+    align-items: center;
+    display: flex;
+  }
+}
+
 /*----Main----*/
 main {
   margin-top: 100px;
@@ -231,6 +249,12 @@ main section .nala-main {
     margin-top: 40px;
   }
 }
+
+@media (max-width: 375px) {
+  main {
+    margin-top: 62px;
+  }
+}
 /*----About Section----*/
 main .about {
   background: linear-gradient(#a8d5ba, #f7e7da);
@@ -300,6 +324,10 @@ main .about .content {
 
   .goals .item {
     max-width: 80%;
+  }
+
+  .about .about-text {
+    padding: 0 10px;
   }
 }
 
@@ -566,6 +594,17 @@ main .tokenomics .content {
     transition: transform 0.3s ease-in-out;
     width: 150px;
     left: -20%;
+  }
+}
+
+@media (max-width: 375px) {
+  .rocket {
+    width: 120px;
+  }
+
+  .road-map .date {
+    transform: rotate(90deg);
+    right: -70px;
   }
 }
 
