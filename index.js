@@ -134,7 +134,7 @@ const langArr = {
     ru: 'Активная работа в социальных сетях (Instagram, TikTok, Twitter) для привлечения внимания к проекту и формированию первого комьюнити.',
     ua: 'Активна взаємодія на соціальних платформах (Instagram, TikTok, Twitter) для привернення уваги до проєкту та створення початкової спільноти.',
   },
-  'lang-stage-subtitle4': {
+  'stage-subtitle4': {
     en: 'Token Launch on DEX',
     ru: 'Запуск токенов на DEX',
     ua: 'Запуск токена на DEX',
@@ -359,7 +359,7 @@ function onscrollRocket() {
       rocket.style.top = 50 + +top.toFixed(0) * -1 + 'px';
     }
   }
-  lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
+  lastScrollTop = st <= 0 ? 0 : st;
 }
 
 function initApp() {

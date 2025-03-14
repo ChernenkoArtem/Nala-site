@@ -207,6 +207,7 @@ main section .buy-token {
   background-color: #e4c9b4;
   margin-top: 80px;
   line-height: 3rem;
+  text-decoration: none;
 }
 main section .buy-token:hover {
   cursor: pointer;
@@ -219,6 +220,12 @@ main section .nala-main {
   position: absolute;
   bottom: -30px;
   left: 2%;
+}
+
+@media (max-width: 1300px) {
+  main .content {
+    padding: 80px 20px;
+  }
 }
 
 @media (max-width: 820px) {
@@ -542,8 +549,6 @@ main .tokenomics .content {
 @media (max-width: 820px) {
   .road-map {
     overflow: hidden;
-    /* background-image: url('../images/rocket.PNG'),
-      linear-gradient(#a8d5ba, #f7e7da); */
   }
 
   .roadmap {
@@ -560,7 +565,7 @@ main .tokenomics .content {
     display: none;
   }
   .roadmap .line {
-    width: 2%;
+    width: 5px;
     height: 100%;
   }
   .roadmap .circle {
